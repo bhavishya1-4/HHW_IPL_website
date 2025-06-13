@@ -14,9 +14,8 @@ header {
     margin: 0%;
 }
 
-body {
-    background: linear-gradient(135deg, rgb(0, 26, 255) 0%, rgb(155, 157, 168) 100%);
-    margin: 0;
+.title {
+    margin-top: 15px;
 }
 
 .logo {
@@ -25,17 +24,20 @@ body {
 }
 
 .nav_links {
-    display: flex;
-    justify-content: center;
-    align-items: center;
     padding: 0;
     margin: 0;
     list-style: none;
 }
 
 .nav_links li {
-    display: inline-flex;
-    margin: 25px
+    display: inline-block;
+    margin: 25px;
+    transition: all 0.3s 0.2s ease;
+}
+
+.nav_links li:hover {
+    color: blue;
+    transform: translateY(-10px);
 }
 
 .nav_links a {
@@ -46,12 +48,99 @@ body {
 }
 
 .HOME {
-    height: 75vh;
+    height: 100%;
     width: 100%;
-    box-sizing: border-box;
-    background-image: url(https://documents.iplt20.com/bcci/articles/1742574837_Website.png);
+    background-image: url(home.png);
     background-size: cover;
-    background-position: left;
+    background-position: center;
+}
+
+.HOME h1 {
+    padding: 50px;
+    color: black;
     text-align: center;
-    font-size: 1.5rem;
+    font-size: 40px;
+}
+
+.HOME p {
+    color: black;
+    padding: 10;
+    font-size: 20px;
+    text-align: center;
+}
+
+.TEAM {
+    height: max-content;
+    width: 100%;
+    background-color: black;
+    color: white;
+}
+
+.TEAM h1 {
+    text-align: center;
+    font-size: 40px;
+    padding: 50px;
+}
+
+.TEAM p {
+    text-align: center;
+    font-size: 25px;
+    padding: 10px;
+    margin-bottom: 30px;
+}
+
+.team_list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding: 0;
+    margin: 0;
+}
+
+.team_list li {
+    font-size: 20px;
+    display: inline-block;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    list-style: none;
+    background-color: white;
+    width: 30%;
+    margin: 10px;
+    padding: 20px;
+    border-radius: 10px;
+    color: black;
+}
+
+.team_list p {
+    font-size: 19px;
+}
+
+li :hover {
+    color: blue;
+    transition: all 0.3s ease-in-out;
+    transform: translateY(-5px);
+}
+
+.STANDINGS {
+    height: 100%;
+    width: 100%;
+    background-image: url(colage.png);
+    color: white;
+    background-size: cover;
+    background-position: center;
+}
+
+.STANDINGS h1 {
+    text-align: center;
+    font-size: 40px;
+    padding: 50px;
+}
+
+.STANDINGS p {
+    text-align: center;
+    font-size: 25px;
+    padding: 10px;
+    margin-bottom: 30px;
 }
