@@ -1,2 +1,2 @@
 # This is a website on IPL 2025
--Bhavishya Singh (XI-D)
+Website designed by Bhavishya Singh (XI-D)
